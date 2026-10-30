@@ -351,6 +351,56 @@ async function main() {
     // Serve static public assets
     server.use(express.static(path.join(process.cwd(), "public")));
 
+    const GTAG_SNIPPET = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZCV3S3911"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZCV3S3911');
+</script>
+`;
+
+    // Ensure Google tag is in <head> for any dynamic HTML response
+    server.use((req: Request, res: Response, next: NextFunction) => {
+      const originalWrite = res.write;
+      const originalEnd = res.end;
+      let injected = false;
+
+      res.write = function (chunk: any, encoding?: any, callback?: any): any {
+        if (!injected && chunk) {
+          try {
+            const str = Buffer.isBuffer(chunk) ? chunk.toString("utf8") : String(chunk);
+            if (str.includes("<head>") && !str.includes("G-NZCV3S3911")) {
+              injected = true;
+              res.removeHeader("content-length");
+              const modified = str.replace("<head>", "<head>" + GTAG_SNIPPET);
+              return originalWrite.call(this, Buffer.isBuffer(chunk) ? Buffer.from(modified, "utf8") : modified, encoding, callback);
+            }
+          } catch (_err) {}
+        }
+        return originalWrite.apply(this, arguments as any);
+      };
+
+      res.end = function (chunk?: any, encoding?: any, callback?: any): any {
+        if (!injected && chunk) {
+          try {
+            const str = Buffer.isBuffer(chunk) ? chunk.toString("utf8") : String(chunk);
+            if (str.includes("<head>") && !str.includes("G-NZCV3S3911")) {
+              injected = true;
+              res.removeHeader("content-length");
+              const modified = str.replace("<head>", "<head>" + GTAG_SNIPPET);
+              return originalEnd.call(this, Buffer.isBuffer(chunk) ? Buffer.from(modified, "utf8") : modified, encoding, callback);
+            }
+          } catch (_err) {}
+        }
+        return originalEnd.apply(this, arguments as any);
+      };
+
+      next();
+    });
+
     // Delegate all other routes to Next.js handler
     server.all("*", (req: Request, res: Response) => {
       const parsedUrl = parse(req.url, true);

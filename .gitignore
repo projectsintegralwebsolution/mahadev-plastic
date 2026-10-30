@@ -12,6 +12,10 @@
 
 # Scratch & temporary files
 scratch/
+scratch-img/
+*.bak
+*.old.*
+public/images/favicon-backup/
 
 # Environment variables & secrets
 .env*.local

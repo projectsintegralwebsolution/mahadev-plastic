@@ -103,14 +103,22 @@ export default function AboutUsPage() {
           <div className="about-section-grid">
             <div className="about-images-wrapper">
               <img
-                src="/images/ab1.webp"
-                alt="About Mahadev Plastic Factory"
+                src="/images/about/acrylic-sheet-manufacturing-plant-talasari.webp"
+                alt="Mahadev Plastic acrylic sheet manufacturing plant in Talasari, Maharashtra - 100% virgin grade PMMA polymer casting facility"
+                title="Mahadev Plastic Acrylic Sheet Manufacturing Plant Talasari"
+                width={800}
+                height={1000}
                 className="about-img-main"
+                loading="eager"
               />
               <img
-                src="/images/ab6.webp"
-                alt="Acrylic Sheet Quality Lab"
+                src="/images/about/acrylic-sheet-optical-clarity-inspection.webp"
+                alt="Cell cast acrylic sheet optical clarity and thickness tolerance quality inspection - 100% virgin PMMA sheet"
+                title="Cell Cast Acrylic Optical Clarity Inspection - Mahadev Plastic"
+                width={700}
+                height={560}
                 className="about-img-secondary"
+                loading="lazy"
               />
               <div className="about-badge">
                 <div className="about-badge-number">100%</div>
@@ -301,8 +309,11 @@ export default function AboutUsPage() {
           <div className="about-section-grid">
             <div className="about-images-wrapper">
               <img
-                src="/images/about/facility-1.png"
-                alt="Mahadev Plastic modern acrylic sheet manufacturing facility at Achhad Industrial Estate, Talasari, Maharashtra - cell casting baths and cleanroom production unit"
+                src="/images/about/acrylic-sheet-cell-casting-facility.webp"
+                alt="Modern acrylic sheet manufacturing infrastructure in Talasari, Maharashtra - high-precision cell casting baths and cleanroom polymer plant"
+                title="Modern Acrylic Sheet Cell Casting Facility Talasari - Mahadev Plastic"
+                width={1400}
+                height={750}
                 className="about-img-main"
                 style={{ width: "100%", height: "clamp(280px, 32vw, 420px)", objectFit: "cover", borderRadius: "var(--radius-md)" }}
                 loading="lazy"

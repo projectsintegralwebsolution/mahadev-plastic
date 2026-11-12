@@ -26,7 +26,7 @@ const SLIDES: Slide[] = [
     primaryBtnHref: "/contact-us",
     secondaryBtnText: "Explore Products",
     secondaryBtnHref: "/acrylic-sheets",
-    bgImage: "/images/3.jpg",
+    bgImage: "/images/3.webp",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const SLIDES: Slide[] = [
     primaryBtnHref: "/contact-us",
     secondaryBtnText: "Our Products",
     secondaryBtnHref: "/acrylic-sheets",
-    bgImage: "/images/2.jpg",
+    bgImage: "/images/2.webp",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const SLIDES: Slide[] = [
     primaryBtnHref: "/contact-us",
     secondaryBtnText: "About Us",
     secondaryBtnHref: "/about-us",
-    bgImage: "/images/5.jpg",
+    bgImage: "/images/5.webp",
   },
 ];
 

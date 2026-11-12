@@ -81,7 +81,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="logo-link">
               <img
-                src="/images/mahade-logo.png"
+                src="/images/mahade-logo.webp"
                 alt="Mahadev Plastic Logo"
                 width={204}
                 height={52}
@@ -249,7 +249,7 @@ export default function Header() {
       <div className={`mobile-drawer ${mobileMenuOpen ? "open" : ""}`}>
         <div className="mobile-drawer-header">
           <img
-            src="/images/mahade-logo.png"
+            src="/images/mahade-logo.webp"
             alt="Mahadev Plastic"
             width={149}
             height={38}

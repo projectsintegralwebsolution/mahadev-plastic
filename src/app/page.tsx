@@ -127,7 +127,7 @@ export default function HomePage() {
             {/* Image Collage with Experience Badge */}
             <div className="about-images-wrapper">
               <img
-                src="/images/home1.jpg"
+                src="/images/home1.webp"
                 alt="Mahadev Plastic Acrylic Sheet Manufacturing Facility in Talasari"
                 width={570}
                 height={400}
@@ -136,7 +136,7 @@ export default function HomePage() {
                 className="about-img-main"
               />
               <img
-                src="/images/home2.jpg"
+                src="/images/home2.webp"
                 alt="Cell Cast Acrylic Sheet Optical Clarity Quality Inspection"
                 width={360}
                 height={260}

@@ -14,8 +14,7 @@ export default function NotFound() {
     <>
       <BreadcrumbBanner
         title="404 - Page Not Found"
-        breadcrumbs={[{ label: "Page Not Found", href: "" }]}
-        description="The page you requested could not be found."
+        items={[{ label: "Page Not Found" }]}
       />
 
       <section style={{ padding: "80px 0", backgroundColor: "#F8FAFC", textAlign: "center" }}>

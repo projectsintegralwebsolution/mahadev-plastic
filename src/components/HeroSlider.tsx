@@ -81,9 +81,15 @@ export default function HeroSlider() {
           key={slide.id}
           className={`hero-slide ${idx === current ? "active" : ""}`}
         >
-          <div
+          <img
+            src={slide.bgImage}
+            alt={slide.title}
+            width={1920}
+            height={889}
+            fetchPriority={idx === 0 ? "high" : "low"}
+            loading={idx === 0 ? "eager" : "lazy"}
+            decoding={idx === 0 ? "sync" : "async"}
             className="hero-slide-bg"
-            style={{ backgroundImage: `url(${slide.bgImage})` }}
           />
           <div className="hero-slide-overlay" />
 

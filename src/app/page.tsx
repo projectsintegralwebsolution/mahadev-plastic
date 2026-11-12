@@ -193,7 +193,7 @@ export default function HomePage() {
 
               <div style={{ marginTop: "32px" }}>
                 <Link href="/about-us" className="pxl-btn" aria-label="Read more about Mahadev Plastic">
-                  <span>Read More</span>
+                  <span>Read More<span className="sr-only"> About Mahadev Plastic</span></span>
                   <span className="btn-icon">
                     <ArrowRight size={15} />
                   </span>

@@ -83,6 +83,8 @@ export default function Header() {
               <img
                 src="/images/mahade-logo.png"
                 alt="Mahadev Plastic Logo"
+                width={204}
+                height={52}
                 className="header-logo-img"
               />
             </Link>
@@ -249,6 +251,8 @@ export default function Header() {
           <img
             src="/images/mahade-logo.png"
             alt="Mahadev Plastic"
+            width={149}
+            height={38}
             style={{ maxHeight: "38px", width: "auto" }}
           />
           <button

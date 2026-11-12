@@ -129,11 +129,19 @@ export default function HomePage() {
               <img
                 src="/images/home1.jpg"
                 alt="Mahadev Plastic Acrylic Sheet Manufacturing Facility in Talasari"
+                width={570}
+                height={400}
+                loading="lazy"
+                decoding="async"
                 className="about-img-main"
               />
               <img
                 src="/images/home2.jpg"
                 alt="Cell Cast Acrylic Sheet Optical Clarity Quality Inspection"
+                width={360}
+                height={260}
+                loading="lazy"
+                decoding="async"
                 className="about-img-secondary"
               />
               <div className="about-badge">
@@ -184,7 +192,7 @@ export default function HomePage() {
               </div>
 
               <div style={{ marginTop: "32px" }}>
-                <Link href="/about-us" className="pxl-btn">
+                <Link href="/about-us" className="pxl-btn" aria-label="Read more about Mahadev Plastic">
                   <span>Read More</span>
                   <span className="btn-icon">
                     <ArrowRight size={15} />
@@ -267,6 +275,10 @@ export default function HomePage() {
                   <img
                     src={product.image}
                     alt={product.title}
+                    width={400}
+                    height={250}
+                    loading="lazy"
+                    decoding="async"
                     className="product-card-img"
                   />
                   <span className="product-card-badge">Manufactured in India</span>
@@ -279,11 +291,15 @@ export default function HomePage() {
                   <p className="product-card-desc">{product.shortDescription}</p>
 
                   <div className="product-card-footer">
-                    <Link href={`/${product.slug}`} className="product-card-link">
+                    <Link
+                      href={`/${product.slug}`}
+                      className="product-card-link"
+                      aria-label={`View specifications for ${product.title}`}
+                    >
                       <span>View Specifications</span>
                       <ArrowRight size={14} />
                     </Link>
-                    <span style={{ fontSize: "12px", color: "var(--text-light)", fontWeight: 600 }}>
+                    <span style={{ fontSize: "12px", color: "#555555", fontWeight: 600 }}>
                       Custom Cuts Avail.
                     </span>
                   </div>
@@ -426,11 +442,19 @@ export default function HomePage() {
               <img
                 src="/images/why1.jpg"
                 alt="Acrylic Sheet Precision Crafting"
+                width={420}
+                height={300}
+                loading="lazy"
+                decoding="async"
                 className="why-collage-img"
               />
               <img
                 src="/images/why2.jpg"
                 alt="Acrylic Sheet Storage & Dispatch"
+                width={420}
+                height={300}
+                loading="lazy"
+                decoding="async"
                 className="why-collage-img"
               />
             </div>

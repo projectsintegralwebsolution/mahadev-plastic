@@ -127,10 +127,11 @@ export default function InquiryForm({ initialProduct = "", theme = "dark" }: Inq
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
-            <label className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
+            <label htmlFor="inquiry-name" className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
               Your Full Name *
             </label>
             <input
+              id="inquiry-name"
               type="text"
               name="name"
               value={formData.name}
@@ -147,10 +148,11 @@ export default function InquiryForm({ initialProduct = "", theme = "dark" }: Inq
           </div>
 
           <div className="form-group">
-            <label className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
+            <label htmlFor="inquiry-email" className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
               Email Address *
             </label>
             <input
+              id="inquiry-email"
               type="email"
               name="email"
               value={formData.email}
@@ -169,10 +171,11 @@ export default function InquiryForm({ initialProduct = "", theme = "dark" }: Inq
 
         <div className="form-row">
           <div className="form-group">
-            <label className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
+            <label htmlFor="inquiry-phone" className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
               Phone Number *
             </label>
             <input
+              id="inquiry-phone"
               type="tel"
               name="phone"
               value={formData.phone}
@@ -189,10 +192,12 @@ export default function InquiryForm({ initialProduct = "", theme = "dark" }: Inq
           </div>
 
           <div className="form-group">
-            <label className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
+            <label htmlFor="inquiry-product" className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
               Select Product
             </label>
             <select
+              id="inquiry-product"
+              aria-label="Select Acrylic Product"
               name="product"
               value={formData.product}
               onChange={handleChange}
@@ -214,10 +219,11 @@ export default function InquiryForm({ initialProduct = "", theme = "dark" }: Inq
         </div>
 
         <div className="form-group">
-          <label className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
+          <label htmlFor="inquiry-message" className="form-label" style={{ color: isLight ? "#374151" : undefined }}>
             Requirement Details / Message *
           </label>
           <textarea
+            id="inquiry-message"
             name="message"
             value={formData.message}
             onChange={handleChange}

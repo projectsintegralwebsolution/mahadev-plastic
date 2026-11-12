@@ -44,6 +44,8 @@ export default function Footer() {
               <img
                 src="/images/mahade-logo-white.png"
                 alt="Mahadev Plastic"
+                width={197}
+                height={50}
                 className="footer-logo"
               />
               <p className="footer-bio">

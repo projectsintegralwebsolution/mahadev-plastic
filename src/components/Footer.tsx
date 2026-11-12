@@ -42,7 +42,7 @@ export default function Footer() {
             {/* Col 1: About Company */}
             <div>
               <img
-                src="/images/mahade-logo.png"
+                src="/images/mahade-logo-white.png"
                 alt="Mahadev Plastic"
                 className="footer-logo"
               />

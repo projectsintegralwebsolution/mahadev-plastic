@@ -440,7 +440,7 @@ export default function HomePage() {
             {/* Imagery Collage with Background Overlay */}
             <div className="why-images-collage">
               <img
-                src="/images/why1.jpg"
+                src="/images/why1.webp"
                 alt="Acrylic Sheet Precision Crafting"
                 width={420}
                 height={300}
@@ -449,7 +449,7 @@ export default function HomePage() {
                 className="why-collage-img"
               />
               <img
-                src="/images/why2.jpg"
+                src="/images/why2.webp"
                 alt="Acrylic Sheet Storage & Dispatch"
                 width={420}
                 height={300}

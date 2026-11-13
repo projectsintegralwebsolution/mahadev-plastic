@@ -109,9 +109,7 @@ export default function Footer() {
                 <div>
                   <p style={{ margin: 0 }}>
                     Mail:{" "}
-                    <a href={`mailto:${COMPANY_INFO.email}`} style={{ color: "#FFFFFF" }}>
-                      {COMPANY_INFO.email}
-                    </a>
+                    <span dangerouslySetInnerHTML={{ __html: `<!--email_off--><a href="mailto:${COMPANY_INFO.email}" style="color: #FFFFFF;">${COMPANY_INFO.email}</a><!--/email_off-->` }} />
                   </p>
                 </div>
               </div>

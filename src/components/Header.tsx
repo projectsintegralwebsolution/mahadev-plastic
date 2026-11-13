@@ -59,7 +59,7 @@ export default function Header() {
               <div className="top-header-item">
                 <Mail size={15} />
                 <span>send mail us:</span>
-                <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a>
+                <span dangerouslySetInnerHTML={{ __html: `<!--email_off--><a href="mailto:${COMPANY_INFO.email}">${COMPANY_INFO.email}</a><!--/email_off-->` }} />
               </div>
             </div>
 
@@ -323,9 +323,7 @@ export default function Header() {
           <div style={{ fontWeight: 700, color: "#FFFFFF", fontSize: "17px", marginBottom: "6px" }}>
             <a href={`tel:${COMPANY_INFO.phoneRaw}`}>{COMPANY_INFO.phone}</a>
           </div>
-          <div style={{ fontSize: "14px", color: "#CBD5E1" }}>
-            <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a>
-          </div>
+          <div style={{ fontSize: "14px", color: "#CBD5E1" }} dangerouslySetInnerHTML={{ __html: `<!--email_off--><a href="mailto:${COMPANY_INFO.email}">${COMPANY_INFO.email}</a><!--/email_off-->` }} />
         </div>
       </div>
     </>

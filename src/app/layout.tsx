@@ -102,17 +102,34 @@ export default function RootLayout({
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=optional"
           />
         </noscript>
-        {/* Google tag (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-NZCV3S3911"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
+        {/* Interaction & Idle Google Tag Manager Loader */}
+        <Script id="gtm-loader" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-NZCV3S3911');
+            (function() {
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-NZCV3S3911', { send_page_view: true });
+
+              var loaded = false;
+              function loadGTM() {
+                if (loaded) return;
+                loaded = true;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-NZCV3S3911';
+                document.head.appendChild(s);
+              }
+
+              ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'].forEach(function(e) {
+                window.addEventListener(e, loadGTM, { once: true, passive: true });
+              });
+              if ('requestIdleCallback' in window) {
+                requestIdleCallback(function() { setTimeout(loadGTM, 3500); });
+              } else {
+                setTimeout(loadGTM, 3500);
+              }
+            })();
           `}
         </Script>
         <meta name="theme-color" content="#0D1B5F" />

@@ -55,6 +55,11 @@ const SLIDES: Slide[] = [
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   const nextSlide = useCallback(() => {
     setCurrent((prev) => (prev + 1) % SLIDES.length);
@@ -82,8 +87,8 @@ export default function HeroSlider() {
           className={`hero-slide ${idx === current ? "active" : ""}`}
         >
           <img
-            src={slide.bgImage}
-            srcSet={idx === 0 ? "/images/3-mobile.webp 768w, /images/3.webp 1920w" : undefined}
+            src={idx === 0 || hasMounted ? slide.bgImage : "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3C/svg%3E"}
+            srcSet={idx === 0 ? "/images/3-mobile.webp?v=2 768w, /images/3.webp?v=2 1920w" : undefined}
             sizes={idx === 0 ? "(max-width: 768px) 100vw, 1920px" : undefined}
             alt={slide.title}
             width={1920}

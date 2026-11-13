@@ -871,6 +871,12 @@ div, section, article, aside, header, footer {
   transition: none;
 }
 
+/* Eliminate LCP transform animation delay on initial paint */
+.hero-slide:first-child .hero-slide-bg {
+  transform: none !important;
+  transition: none !important;
+}
+
 .hero-slide-bg {
   position: absolute;
   top: 0;

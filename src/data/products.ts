@@ -23,7 +23,7 @@ export const PRODUCTS: Product[] = [
     title: "Acrylic Sheets",
     subtitle: "High-Quality Acrylic Sheet Manufacturing & Supply Across India",
     shortDescription: "Mahadev Plastic manufactures precision-engineered acrylic sheets delivering exceptional clarity, durability, and versatility for industrial, architectural, and commercial applications.",
-    image: "/images/Acrylic-Sheets.webp",
+    image: "/images/Acrylic-Sheets.webp?v=2",
     secondaryImage: "/images/2-1.jpg",
     overview: [
       "Mahadev Plastic is a leading Acrylic Sheet Manufacturer in India, combining modern manufacturing technology, skilled workmanship, and strict quality control to create acrylic sheets that deliver exceptional clarity, strength, and finish. Every sheet is manufactured using premium grade raw materials to ensure durability, weather resistance, and dependable performance in demanding applications.",
@@ -66,7 +66,7 @@ export const PRODUCTS: Product[] = [
     title: "Acrylic Transparent Sheet",
     subtitle: "Crystal Clear Acrylic Sheets with Outstanding Light Transmission",
     shortDescription: "Crystal-clear transparent acrylic sheets offering superior glass-like optical clarity, weather resistance, and shatterproof durability.",
-    image: "/images/Transparent-acrylic-sheet.webp",
+    image: "/images/Transparent-acrylic-sheet.webp?v=2",
     secondaryImage: "/images/home1.jpg",
     overview: [
       "Mahadev Plastic is a recognized Acrylic Transparent Sheet Manufacturer in India, delivering crystal-clear PMMA sheets engineered for optimal optical performance. Our transparent acrylic sheets provide higher light transmission than traditional glass while remaining shatterproof and lightweight.",
@@ -109,7 +109,7 @@ export const PRODUCTS: Product[] = [
     title: "Fluorescent Acrylic Sheet",
     subtitle: "Vibrant Edge-Glow Acrylic Sheets for Signage & Creative Displays",
     shortDescription: "Eye-catching fluorescent acrylic sheets with striking edge-glow luminescence under natural light and UV illumination.",
-    image: "/images/Fluorescent-Acrylic-Sheet.webp",
+    image: "/images/Fluorescent-Acrylic-Sheet.webp?v=2",
     secondaryImage: "/images/Fluorescent-Acrylic-Sheet-300x158.jpg",
     overview: [
       "Mahadev Plastic is a premier Fluorescent Acrylic Sheet Manufacturer in India, producing luminous sheets with vivid colors and striking edge-glow properties. Specially formulated colorants collect ambient ambient light and channel it toward the edges, creating a radiant glowing effect without electrical wiring.",
@@ -145,7 +145,7 @@ export const PRODUCTS: Product[] = [
     title: "MOP Acrylic Sheet",
     subtitle: "Mother of Pearl Decorative Acrylic Sheets for Luxurious Interiors",
     shortDescription: "Luxurious Mother of Pearl (MOP) acrylic sheets featuring rich, iridescent pearlescent patterns for premium furniture, wall cladding, and interior decor.",
-    image: "/images/MOP-Acrylic-Sheet.webp",
+    image: "/images/MOP-Acrylic-Sheet.webp?v=2",
     secondaryImage: "/images/ptt1-1.webp",
     overview: [
       "Mahadev Plastic manufactures exotic MOP (Mother of Pearl) Acrylic Sheets in India, offering opulent pearlescent luster and shimmering multidimensional depth. Our MOP sheets capture the iridescent beauty of natural shell while providing the structural benefits of premium cast acrylic.",
@@ -181,7 +181,7 @@ export const PRODUCTS: Product[] = [
     title: "Cast Acrylic Sheet",
     subtitle: "Cell Cast Acrylic Sheets with Superior Chemical & Thermal Resistance",
     shortDescription: "Cell-cast acrylic sheets crafted for demanding industrial fabrication, high thermal stability, superior optical clarity, and precision machining.",
-    image: "/images/Cast-Acrylic-Sheet.webp",
+    image: "/images/Cast-Acrylic-Sheet.webp?v=2",
     secondaryImage: "/images/Cast-Acrylic-Sheet-300x158.jpg",
     overview: [
       "Mahadev Plastic is a leading Cast Acrylic Sheet Manufacturer in India. Produced via the cell-casting method, our sheets offer higher molecular weight compared to extruded sheets, yielding superior chemical resistance, thermal stability, and clean laser-cutting edges without gumming.",
@@ -218,7 +218,7 @@ export const PRODUCTS: Product[] = [
     title: "Frosted Acrylic Sheet",
     subtitle: "Matte Finish Acrylic Sheets for Diffused Lighting & Privacy Partitions",
     shortDescription: "Elegant frosted matte acrylic sheets engineered to eliminate glare, diffuse light softly, and provide contemporary privacy partitioning.",
-    image: "/images/Frosted-Acrylic-Sheet.webp",
+    image: "/images/Frosted-Acrylic-Sheet.webp?v=2",
     secondaryImage: "/images/frosted-acrylic-sheets-commercial-interiors-300x157.webp",
     overview: [
       "Mahadev Plastic is a trusted Frosted Acrylic Sheet Manufacturer in India, offering premium-quality matte acrylic sheets for interior design, architectural projects, office partitions, decorative panels, and illuminated lighting fixtures.",

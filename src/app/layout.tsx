@@ -70,7 +70,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/3-mobile.webp"
+          href="/images/3-mobile.webp?v=2"
           type="image/webp"
           media="(max-width: 767px)"
           fetchPriority="high"
@@ -78,7 +78,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/3.webp"
+          href="/images/3.webp?v=2"
           type="image/webp"
           media="(min-width: 768px)"
           fetchPriority="high"

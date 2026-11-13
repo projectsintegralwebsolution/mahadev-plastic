@@ -83,6 +83,8 @@ export default function HeroSlider() {
         >
           <img
             src={slide.bgImage}
+            srcSet={idx === 0 ? "/images/3-mobile.webp 768w, /images/3.webp 1920w" : undefined}
+            sizes={idx === 0 ? "(max-width: 768px) 100vw, 1920px" : undefined}
             alt={slide.title}
             width={1920}
             height={889}

@@ -11,7 +11,7 @@ import { getBlogBySlug, getPublicBlogs } from "@/lib/blogStorage";
 export const dynamic = "force-dynamic";
 
 interface Props {
-  params: Promise<{ slug: string }> | { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {

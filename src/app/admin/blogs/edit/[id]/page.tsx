@@ -7,11 +7,12 @@ import { getBlogById } from "@/lib/blogStorage";
 export const dynamic = "force-dynamic";
 
 interface EditBlogPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }> | { id: string };
 }
 
-export default function EditBlogPage({ params }: EditBlogPageProps) {
-  const blog = getBlogById(params.id);
+export default async function EditBlogPage({ params }: EditBlogPageProps) {
+  const resolvedParams = await params;
+  const blog = getBlogById(resolvedParams.id);
 
   if (!blog) {
     notFound();

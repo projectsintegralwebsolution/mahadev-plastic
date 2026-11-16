@@ -11,7 +11,7 @@ import { getBlogBySlug, getPublicBlogs } from "@/lib/blogStorage";
 export const dynamic = "force-dynamic";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }> | { slug: string };
 }
 
 export async function generateStaticParams() {
@@ -22,7 +22,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getBlogBySlug(params.slug, true);
+  const resolvedParams = await params;
+  const post = getBlogBySlug(resolvedParams.slug, true);
   if (!post) {
     return { title: "Blog Post Not Found | Mahadev Plastic" };
   }
@@ -74,8 +75,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function BlogPostPage({ params }: Props) {
-  const post = getBlogBySlug(params.slug, false);
+export default async function BlogPostPage({ params }: Props) {
+  const resolvedParams = await params;
+  const post = getBlogBySlug(resolvedParams.slug, false);
 
   if (!post) {
     notFound();

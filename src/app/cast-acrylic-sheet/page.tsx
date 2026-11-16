@@ -103,6 +103,9 @@ export default function CastAcrylicSheetPage() {
                 <p>
                   This rigorous curing sequence completely relieves internal residual stresses, ensuring uniform thickness tolerances across large 8x4 ft and 2000x3000 mm sheet formats.
                 </p>
+                <p>
+                  Unlike continuous extruded acrylic which has shorter polymer chains prone to edge gumming and stress-crazing under solvents, cell-cast acrylic exhibits ultra-high molecular weight. This enables high-speed CNC milling and clean CO2 laser cutting without burrs or localized melting. Cell-cast sheets also provide chemical resistance against dilute inorganic acids, alkalis, oils, and aliphatic hydrocarbons, making them the preferred material for chemical inspection viewports, acoustic sound barriers, and heavy machinery enclosures in gauges from 2.0 mm up to 50 mm.
+                </p>
               </div>
 
               <div className="product-content-block">

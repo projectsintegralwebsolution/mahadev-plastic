@@ -100,6 +100,9 @@ export default function FrostedAcrylicSheetPage() {
                 <p>
                   Designed as an elegant modern alternative to heavy architectural glass, our Frosted Acrylic Sheets combine velvety satin texture with structural durability. They reduce glare in corporate workspaces, provide acoustic dampening, and maintain consistent optical diffusion even after heat bending or line forming.
                 </p>
+                <p>
+                  We manufacture both single-sided matte (one side glossy, one side satin) and double-sided frosted variants. Single-sided sheets are favored for illuminated signage and lightbox facings where the glossy reverse facilitates smooth vinyl or UV-printed graphic application. Double-sided satin sheets are specified for freestanding office dividers, privacy screens, and dual-direction light fixtures. The non-porous surface resists finger oils and chemical sanitizers, ensuring easy maintenance in commercial offices, hospitals, and hospitality environments. Available in 8ft × 4ft (2440 × 1220 mm) formats in thicknesses from 2.0 mm to 15.0 mm.
+                </p>
               </div>
 
               <div className="product-content-block">

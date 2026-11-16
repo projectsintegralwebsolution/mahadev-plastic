@@ -99,6 +99,9 @@ export default function AcrylicSheetsPage() {
                     </Link>
                     , our nationwide distribution network supplies fabricators, OEMs, and signage printers across Mumbai, Delhi, Ahmedabad, Bengaluru, and pan-India with dependable factory wholesale pricing.
                   </p>
+                  <p>
+                    As a direct polymer producer, we cast and extrude acrylic sheets in standard 8ft × 4ft (2440 × 1220 mm) and 6ft × 4ft (1830 × 1220 mm) formats, with gauges ranging from 1.5 mm to 25 mm. Lightweight gauges (1.5 mm to 3 mm) are engineered for photo framing, poster covers, and illuminated sign faceplates, while medium structural gauges (4 mm to 8 mm) deliver rigidity for retail vitrines, partitions, and display furniture. Heavy industrial gauges (10 mm to 25 mm) provide structural impact resistance for acoustic sound barriers, cleanroom vision panels, and heavy-duty machine shields.
+                  </p>
                 </div>
               </div>
 
@@ -204,7 +207,7 @@ export default function AcrylicSheetsPage() {
                   <Link href="/our-clients" style={{ color: "var(--primary)", fontWeight: 600, textDecoration: "underline" }}>
                     client partner sectors
                   </Link>
-                  .
+                  . From precision CNC routing and CO2 laser cutting to thermal line bending and vacuum forming, our acrylic sheets ensure smooth edge finishes with zero crazing. Every production batch undergoes strict thickness tolerance verification, optical transmittance testing, and surface scratch inspection before shipment in protective export packaging.
                 </p>
                 <div className="app-cards-grid" style={{ marginTop: "16px" }}>
                   {mainProduct.applications.map((app, idx) => (

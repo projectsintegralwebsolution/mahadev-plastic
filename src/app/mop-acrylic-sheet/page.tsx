@@ -100,6 +100,9 @@ export default function MOPAcrylicSheetPage() {
                 <p>
                   Our MOP sheets can be cleanly cut with standard carbide saw blades, CNC routers, or laser cutters, and thermoformed into gentle curves without surface crazing or color fading. They provide seamless edge bonding and wipe-clean maintenance using mild soapy water.
                 </p>
+                <p>
+                  For interior carpentry and architectural cladding, MOP decorative panels are typically mounted over calibrated plywood, WPC, or MDF substrates using neutral-cure silicone adhesives to avoid backing discoloration. Consecutive sheets from the same casting run feature harmonized pearlescent swirl flows, allowing contractors to create seamless, continuous vein patterns across extensive mandir temple backdrops, luxury kitchen cabinet shutters, and boutique reception backings. Available in 8ft × 4ft (2440 × 1220 mm) dimensions with thicknesses from 2.5 mm to 6.0 mm.
+                </p>
               </div>
 
               <div className="product-content-block">

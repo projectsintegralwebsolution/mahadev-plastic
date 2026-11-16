@@ -92,6 +92,9 @@ export default function AcrylicTransparentSheetPage() {
                     </Link>{" "}
                     for glare-free privacy partitions.
                   </p>
+                  <p>
+                    With a refractive index of 1.49 and total luminous transmittance of 92% to 93%, our clear PMMA sheets deliver crystal-grade transparency without color fringing or chromatic aberration. Compared to standard soda-lime float glass (88%–90% light transmittance), our clear acrylic transmits more ambient daylight while reducing structural framing loads by 50%. Integrated UV-absorbing stabilizers ensure long-term exterior durability, preventing yellowing, surface hazing, or embrittlement even under prolonged tropical sun exposure.
+                  </p>
                 </div>
               </div>
 
@@ -125,6 +128,9 @@ export default function AcrylicTransparentSheetPage() {
                       </div>
                     ))}
                   </div>
+                  <p style={{ marginTop: "18px", color: "var(--text-muted)", fontSize: "15px", lineHeight: 1.6 }}>
+                    For downstream fabrication, our transparent acrylic sheets support high-speed CNC routing, CO2 laser cutting, diamond edge beveling, and flame polishing to produce glass-smooth, optically clear perimeter edges. All sheets are protected on both faces with thermoformable kraft paper or peelable PE film to prevent surface scuffs during cutting, transport, and assembly.
+                  </p>
                 </div>
               )}
 

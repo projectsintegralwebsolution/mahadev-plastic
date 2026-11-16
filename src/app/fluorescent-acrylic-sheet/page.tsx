@@ -100,6 +100,9 @@ export default function FluorescentAcrylicSheetPage() {
                 <p>
                   When fluorescent acrylic is laser engraved or CNC routed, the surface disruption redirects internal light upward through the etched contours. This causes vector brand lettering and logos to radiate with the same brilliant luminescence as the sheet edges.
                 </p>
+                <p>
+                  During CO2 laser cutting, the material cuts cleanly with flame-polished perimeter edges that preserve internal light transmission without edge crazing. For retail display fabricators, these sheets can be thermoformed or line-bent at 150°C to 165°C into self-illuminating POP brochure holders, cosmetic display risers, and curved lighting fixtures. Our fluorescent grades are manufactured in standard 8ft × 4ft (2440 × 1220 mm) dimensions across vibrant shades including Neon Green, Electric Orange, Radiant Red, Luminous Yellow, Vivid Blue, and Hot Pink in 2.0 mm to 6.0 mm thicknesses.
+                </p>
               </div>
 
               <div className="product-content-block">

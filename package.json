@@ -28,7 +28,8 @@
   "overrides": {
     "sharp": "^0.35.5",
     "proxy-addr": "^2.0.8",
-    "body-parser": "^1.20.9"
+    "body-parser": "^1.20.9",
+    "source-map-js": "^1.2.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
